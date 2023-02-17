@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/photo-1520050206274-a1ae44613e6d-1920w.webp);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo{
+    color: #45aaf2;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #45aaf2;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px  25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+}
+.btn{
+    background-color:#f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translateY(-50%);
+}
+
+h1{
+    color: white;
+    padding: 1px 10px 60px 40px;
+    font-size: 75px;
+
+}
+h1{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4{
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+
+/* =======================About-Section======================= */
+
+.about-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-area{
+    position: relative;
+
+}
+
+.about-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+
+}
+.about-img>img{
+    position: absolute;
+    width: 65%;
+    /*border-radius: 15%;
+    animation-name: img;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+}
+@keyframes img {
+    to{
+        top: -10px;
+    }from{
+         top: 10px;
+     }
+}
+
+.about-content{
+
+    height: 100%;
+    /* // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.about-content>h6:nth-child(1){
+    color: dodgerblue;
+    text-align: center;
+    font-size: 4em;
+}
+.about-content>h2:nth-child(2){
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    font-size: 2em;
+}
+.about-content>p:nth-child(2){
+
+    color: rgb(63, 62, 62);
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 1.02em;
+}
+
+.ourCars{
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+#ourCarsTopic{
+    position: absolute;
+}
+.ourCars p{
+    position: absolute;
+    top: 50px;
+}
+
+.car-container{
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.car-div1{
+
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.car-div1-top{
+    width: 100%;
+    height: 80%;
+    background-image: url("../images/bmw.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.car-div1-bottom{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-div1-bottom>h3{
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.car-div2{
+
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.car-div2-top{
+    width: 100%;
+    height: 80%;
+    background-image: url("../images/audi.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.car-div2-bottom{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-div2-bottom>h3{
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.car-div3{
+
+    width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.car-div3-top{
+    width: 100%;
+    height: 80%;
+    background-image: url("../images/HYUNDAI.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+.car-div3-bottom{
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.car-div3-bottom>h3{
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
