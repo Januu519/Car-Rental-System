@@ -93,7 +93,7 @@
         }
 
 
-        #UserLoginAccount>div:nth-child(1){
+       /* #UserLoginAccount>div:nth-child(1){
             background:url("../img/creatAccountImg2.png");
             background-size:cover;
             background-position:center;
@@ -115,7 +115,7 @@
             width: 400px;
             height: 430px;
         }
-
+*/
         /*#UserLoginAccountHeadNav{*/
         /*    z-index: 1;*/
         /*    position: absolute;*/
@@ -170,16 +170,18 @@
         #UserLoginAccount>div>form>input:nth-child(1){
             margin-top: 30px;
             margin-bottom: 20px;
+            width: 100%;
         }
         #UserLoginAccount>div>form>input:nth-child(2){
             margin-bottom: 20px;
+            width: 100%;
         }
         #UserLoginAccount>div>form>p{
             margin: 0;
         }
         #btnSignnUp{
 
-            background-color: #FEBE29;
+            background-color: #0b5ed7;
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 700;
@@ -259,8 +261,8 @@
     <div>
        <!-- <h1 >Login Your Account.</h1>-->
         <form>
-            <input type="text" class="form-control" id="" placeholder="User Name">
-            <input type="text" class="form-control" id="" placeholder="Password">
+            <input type="text" class="form-control" id="name" placeholder="User Name">
+            <input type="text" class="form-control" id="pwd" placeholder="Password">
             <button id="btnSignnUp" type="button" class="btn btn-primary">Sign Up</button>
             <p>Forget Password <a href="#">here</a></p>
             <div id="linee1"></div>
@@ -269,7 +271,7 @@
                 <h1>OR</h1>
             </div>
             <button id="btnSignnIn" type="button" class="btn btn-primary">
-                <img id="googlee" src="assets/img/googleIcon.png">Sign Up</button>
+                <img id="googlee" src="pages/img/googlee.png">Sign Up</button>
         </form>
     </div>
 
