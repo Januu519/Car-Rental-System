@@ -23,12 +23,12 @@ nav{
 
 .logo{
     color: white;
-    font-size: 35px;
+    font-size: 25px;
     letter-spacing: 1px;
     cursor: pointer;
 }
 span{
-    color: #20bf6b;
+    color: #fbc531;
 }
 
 nav ul li{
@@ -43,7 +43,7 @@ nav ul li a{
     text-transform: capitalize;
 }
 nav ul li a:hover{
-    color: #f9004d;
+    color: #fbc531;
     transition: .4s;
 }
 /*.btn{
@@ -65,27 +65,30 @@ nav ul li a:hover{
     top: 50%;
     left:50%;
     transform: translateY(-50%);
-    color: #20bf6b;
+    color: snow;
 }
 
-h1{
-    margin-left: 500px;
-    font-weight: 500;
+#myh1{
+    margin-left: 60px;
+    font-weight: 100;
     line-height: 1.2;
-    color: darkgoldenrod;
+    color: white;
+    font-size: 20px;
 
 }
-h1{
-    margin-left: 500px;
-    font-weight: 500;
+#myh{
+    margin-left: 60px;
+    font-weight: 100;
     line-height: 1.2;
-    color: darkgoldenrod;
+    color: white;
+    font-size: 20px;
 }
-h4{
-    margin-left: 80px;
-    font-weight: 500;
+#myh4{
+    margin-left: 60px;
+    font-weight: 600;
     line-height: 1.2;
-    color: darkgoldenrod;
+    color: #fbc531;
+    font-size: 40px;
 }
 
 
@@ -97,7 +100,7 @@ h4{
     align-items: center;
     justify-content: center;
 
-    background-image: url(../images/black.jpg);
+    background-color: white;
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -189,8 +192,10 @@ h4{
 #ourCarsTopic{
     position: absolute;
     color: #20bf6b;
-    margin-left: 40px;
+    margin-ri: 60px;
+    margin-bottom: 40px;
     font-size: 4em;
+    text-align: center;
 }
 .ourCars p{
     position: absolute;
