@@ -202,6 +202,23 @@ nav ul li a:hover{
     font-family: 'Josefin Sans', sans-serif;
 }
 
+/*------------------------------------------------------------------*/
+#better{
+    color: #fbc531;
+    font-size: 3em;
+    margin-left: 80px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#easy{
+    color: black;
+    margin-left: 80px;
+    font-size: 1.8em;
+}
+
+#1png{
+    height: 1.5rem;
+    size: 16px;
+}
 
 
 
