@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../BackEnd" />
     <file type="web" url="file://$PROJECT_DIR$/Backend" />
+    <file type="web" url="file://$PROJECT_DIR$/Backend_" />
   </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" value="E:/JANU" />

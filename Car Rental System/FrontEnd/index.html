@@ -19,8 +19,202 @@
 
     <!--link Bootstrap Framework-->
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </head>
+
+<style>
+    #UserAccount{
+        height: 60vh;
+
+       background-color: #eeb4b4;
+    }
+    #UserAccount>div:nth-child(3),#UserAccount>div:nth-child(4){
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 70px;
+    }
+    #UserAccount>div>h1,#UserAccount>div>form>div>h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.1rem;
+        line-height: 60px;
+    }
+    #UserAccount>div>form{
+        width: 50%;
+    }
+    #UserAccount>div>form>div{
+        display: flex;
+        gap: 2%;
+        flex-direction: row;
+        margin: 2%;
+    }
+    #UserAccount>div>form>div>img{
+        height: 3rem;
+    }
+    #UserAccount>div>form>div>div>p{
+        margin-bottom: 0;
+    }
+    #UserAccount>div>form>div>div>input{
+        font-size: 9px;
+    }
+    #btnSignUp{
+        width: 100%;
+        background-color: #2572E6;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+
+    }
+    #UserStore>div:nth-child(2){
+        position: relative;
+        top: 70px;
+
+    }
+
+    #UserStore>div:nth-child(2)>h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2rem;
+        margin: 0;
+    }
+    #UserStore>div:nth-child(2)>h2{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    #UserStore>div:nth-child(2)>p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        margin: 0;
+        color: #747474;
+    }
+    span{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 60px;
+
+        color: #0300A7
+    }
+    #UserStore{
+       background-color: #d74141;
+        height: 100vh;
+    }
+    #UserStore>div:nth-child(2)>form{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    #UserStore>div:nth-child(2)>form>div:nth-child(1){
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    #UserStore>div:nth-child(2)>form>div:nth-child(1)>div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    #UserStore>div:nth-child(2)>form>div:nth-child(1)>div>h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+    }
+    #UserStore>div:nth-child(2)>form>div:nth-child(2)>div>h1{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.1rem;
+
+    }
+
+    #UserStore>div:nth-child(2)>form>div:nth-child(2){
+        display: flex;
+        gap: 10px;
+
+    }
+    #UserStore>div:nth-child(2)>form>div:nth-child(2)>div{
+        width: 289.837px;
+
+    }
+    #UserStore>div:nth-child(2)>div:nth-child(5){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+
+
+
+    /*card Manage start*/
+    .card>hr{
+        margin: 0;
+    }
+    .card-body{
+        padding: 10px;
+    }
+    .card-body>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .card-body>h5{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .card-body>p{
+        margin-bottom: 0;
+    }
+    .card-body>.btnViewDetail{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        color: blue;
+        font-size: 10px;
+    }
+    .card-body>div>div>h5{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        margin: 0;
+    }
+    .card-body>div>div>p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        margin: 0;
+    }
+    .card-body>button{
+        width: 100%;
+    }
+    #name,#pwd{
+        margin: 1rem;
+        width: 437px;
+    }
+
+</style>
 <body>
 
 
@@ -38,159 +232,264 @@
         <!--<a href="#" class="btn">Subscribe</a>-->
     </nav>
 
-    <div class="content">
+    <div id="home" class="content">
         <h4 id="myh4">FIND THE IDEAL CAR FOR YOU</h4>
         <h1 id="myh1">We have more cars for you to choose</h1>
         <h1 id="myh">Get the Best Car Best Price</h1>
     </div>
 </div>
 
-<!--
- /*================== AboutSection ================================= */
-<section class="about-section container-fluid">
-    <div class="row mx-5 about-area">
-        <div class="col-xxl-6 col-xl-6 col-12 about-img">
-            <img src="assets/images/about.jpg" alt="">
+
+<main id="UserAccount" class="container-fluid">
+    <div></div>
+    <div></div>
+    <div>
+        <div id="registrationForm">Registration Form</div>
+        <form>
+            <div>
+                <input id="txtCustomerName" type="text" class="form-control"  placeholder="Enter Name" name="name">
+                <input id="txtCustomerNIC" type="text" class="form-control"  placeholder="Enter NIC Number" name="nic">
+
+            </div>
+            <div>
+                <input id="txtCustomerDrivingLicense" type="text" class="form-control"  placeholder="Enter Driving License" name="drivingLicense">
+                <input id="txtCustomerContactNumber" type="text" class="form-control"  placeholder="Enter Contact Number" name="contactNumber">
+            </div>
+            <div>
+                <input id="txtCustomerEmail" type="text" class="form-control" placeholder="Enter Email" name="email">
+                <input id="txtCustomerAddress" type="text" class="form-control"  placeholder="Enter Address" name="address">
+            </div>
+            <div>
+                <input id="txtCustomerPassword" type="text" class="form-control" placeholder="Enter New Password" name="password">
+            </div>
+            <div>
+                <img src="assets/images/file.png">
+                <div>
+                    <p>Upload Nic / Driving License</p>
+                    <input id="file" name="img" type="file">
+                </div>
+            </div>
+            <div>
+                <button id="#btnregisterSignUp" type="button" class="btn btn-primary">Sign Up</button>
+            </div>
 
 
-        </div>
-        <div class="col-xxl-6 col-xl-6 col-12 about-content">
-            <h6 id="aboutus">About Us</h6>
-            <h1 id="welcome">Welcome to EasyCAR Rental</h1>
+        </form>
+    </div>
+    <div>
+        <p>Alreary have account sign in <button href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">here</button></p>
+    </div>
 
-            <p>Easy car rental private limited is a
-                car rental service with 5 years of history.
-                Our company has about 50 cars and 40 drivers
-                working for them in regular shifts.
-                Our company is located at No. 200, Galle Road,
-                Panadura, and well known for Our services.
-                <br>
-
-                The company aims to provide convenient and affordable car rental options
-                to meet the diverse transportation needs of its customers.
-                Whether you are in need of a compact car for a city trip,
-                a spacious SUV for a family vacation, or a luxury car for a special event.
-            </p>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control" id="name" placeholder="User Name">
+                    <input type="text" class="form-control" id="pwd" placeholder="Password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</main>
+<main id="UserStore" class="container-fluid">
+    <div></div>
+    <div>
+        <h1>Spend less and hire the best.</h1>
+        <h2><span>Rent a car </span>& Feel different with us</h2>
+        <p>Recommendation for You</p>
+        <form>
+            <div>
+                <div>
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Brand</option>
+                        <option value="1">One</option>
 
-steps for renting a car
-
-<section class="services section-bg" id="services">
-    <div class="container" data-aos="fade-up">
-
-        PageTwo Title
-        <div class="section-header">
-            <h2 id="better">Better Way to Rent Your Perfect Cars</h2>
-            <p id="easy">Easy steps for renting a car
-            </p>
-        </div>
-
-        Page Two Details
-        <div class="row gy-4">
-
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="service-item  position-relative">
-                                        <div class="icon">
-                    <img id="1png" alt="" src="assets/images/destination.png">
-                                        </div>
-                    <h3>Choose Your Pickup Location</h3>
-
-
-
+                    </select>
                 </div>
-            </div> End Service Item
+                <div>
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Type</option>
+                        <option value="1">One</option>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="service-item position-relative">
-                      <div class="icon">
-                    <img id="2png" alt="" src="assets/images/handshake.png">
-                                        </div>
-                    <h3>Select the Best Deal</h3>
-
+                    </select>
                 </div>
-            </div> End Service Item
+                <div>
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Fuel Type</option>
+                        <option value="1">One</option>
 
-            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="service-item position-relative">
-                                        <div class="icon">
-                    <img id="3png" alt="" src="assets/images/rent.png">
-                                        </div>
-                    <h3>Reserve Your Rental Car</h3>
-
-
-
+                    </select>
                 </div>
-            </div> End Service Item
+                <div>
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Transmission</option>
+                        <option value="1">One</option>
 
-        </div>
+                    </select>
+                </div>
+                <div>
+                    <select class="form-control" aria-label="Default select example">
+                        <option selected>Passengers</option>
+                        <option value="1">One</option>
 
-    </div>
-</section> End Services Section
-
-
-
- ======= Footer =======
-<footer id="footer">
-
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h3>Contact Us.</h3>
-                    <p>
-                        No.200, <br>
-                        Galle Road,<br>
-                        Panadura <br><br>
-                        <strong>Phone:</strong> +94 789075477<br>
-                        <strong>Email:</strong>easycarRental@gmail.com. <br>
-                    </p>
+                    </select>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">About Us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">Store</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">LogIn</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#">CheckOut</a></li>
-                    </ul>
-                </div>
 
-                <div class="col-lg-3 col-md-6 footer-links"></div>
+            </div>
+            <div>
+                <input type="date" class="form-control" id="" placeholder="From">
+                <input type="date" class="form-control" id="" placeholder="To">
+                <input type="text" class="form-control" id="" placeholder="Search">
+            </div>
+        </form>
+        <div>
+            <div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Our Social Networks</h4>
-                    <p>Drop a message</p>
-                    <div class="social-links mt-3">
-
-                        <a class="twitter" href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="twitter" href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="twitter" href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a class="twitter" href="#"><i class="fa-brands fa-facebook"></i></a>
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body border-bottom-0">
+                        <h5 class="card-title">Suzuki Alto</h5>
+                        <p class="card-text">Premium - Manual</p>
                     </div>
+                    <hr>
+                    <div class="card-body text-center">
+                        <div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>5000</p>
+                            </div>
+                            <div>
+                                <h5>Monthy</h5>
+                                <p>300000</p>
+                            </div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>15000</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+
                 </div>
+
+
+            </div>
+            <div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body border-bottom-0">
+                        <h5 class="card-title">Suzuki Alto</h5>
+                        <p class="card-text">Premium - Manual</p>
+                    </div>
+                    <hr>
+                    <div class="card-body text-center">
+                        <div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>5000</p>
+                            </div>
+                            <div>
+                                <h5>Monthy</h5>
+                                <p>300000</p>
+                            </div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>15000</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body border-bottom-0">
+                        <h5 class="card-title">Suzuki Alto</h5>
+                        <p class="card-text">Premium - Manual</p>
+                    </div>
+                    <hr>
+                    <div class="card-body text-center">
+                        <div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>5000</p>
+                            </div>
+                            <div>
+                                <h5>Monthy</h5>
+                                <p>300000</p>
+                            </div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>15000</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
+                    <hr>
+                    <div class="card-body border-bottom-0">
+                        <h5 class="card-title">Suzuki Alto</h5>
+                        <p class="card-text">Premium - Manual</p>
+                    </div>
+                    <hr>
+                    <div class="card-body text-center">
+                        <div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>5000</p>
+                            </div>
+                            <div>
+                                <h5>Monthy</h5>
+                                <p>300000</p>
+                            </div>
+                            <div>
+                                <h5>Daily</h5>
+                                <p>15000</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
     </div>
 
-    <div class="container footer-bottom clearfix">
-        <div class="copyright">
-            Copyright &copy; 2023 <strong><span>ECar Rental</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            Designed by <a href="https://github.com/Januu519">Jayamini Sakunthala</a>
-        </div>
-    </div>
-</footer> End Footer
+</main>
 
--->
+<script src="assets/js/jquery-3.6.1.min (2).js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/controllers/DashBoard.js"></script>
+<script src="assets/controllers/registerFormController.js"></script>
 
-
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

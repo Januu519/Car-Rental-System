@@ -13,6 +13,7 @@
     <bytecodeTargetLevel>
       <module name="BackEnd" target="8" />
       <module name="Backend" target="8" />
+      <module name="Backend_" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
