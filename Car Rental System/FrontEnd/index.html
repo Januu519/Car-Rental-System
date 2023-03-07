@@ -2,250 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Easy Car Rental</title>
-
-    <link href="assets/styles/style.css" rel="stylesheet">
-    <link href="assets/styles/normalize.css" rel="stylesheet">
+    <title>User Dashboard</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/userDashBoard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/userCreateAccount.css">
+    <link rel="stylesheet" href="assets/style/userLoginAccount.css">
+    <link rel="stylesheet" href="assets/style/userStore.css">
+    <link rel="stylesheet" href="assets/style/userCarCatelogue.css">
+    <link rel="stylesheet" href="assets/style/userCheckOut.css">
+    <link rel="stylesheet" href="assets/style/userViewCarRents.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
-
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-
-    <!--link Bootstrap Framework-->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </head>
+ <body>
+<header id="UserDashBoardHead">
 
-<style>
-    #UserAccount{
-        height: 60vh;
-
-       background-color: #eeb4b4;
-    }
-    #UserAccount>div:nth-child(3),#UserAccount>div:nth-child(4){
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        top: 70px;
-    }
-    #UserAccount>div>h1,#UserAccount>div>form>div>h1{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2.1rem;
-        line-height: 60px;
-    }
-    #UserAccount>div>form{
-        width: 50%;
-    }
-    #UserAccount>div>form>div{
-        display: flex;
-        gap: 2%;
-        flex-direction: row;
-        margin: 2%;
-    }
-    #UserAccount>div>form>div>img{
-        height: 3rem;
-    }
-    #UserAccount>div>form>div>div>p{
-        margin-bottom: 0;
-    }
-    #UserAccount>div>form>div>div>input{
-        font-size: 9px;
-    }
-    #btnSignUp{
-        width: 100%;
-        background-color: #2572E6;
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-
-    }
-    #UserStore>div:nth-child(2){
-        position: relative;
-        top: 70px;
-
-    }
-
-    #UserStore>div:nth-child(2)>h1{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 2rem;
-        margin: 0;
-    }
-    #UserStore>div:nth-child(2)>h2{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.5rem;
-        margin: 0;
-    }
-    #UserStore>div:nth-child(2)>p{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        margin: 0;
-        color: #747474;
-    }
-    span{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 60px;
-
-        color: #0300A7
-    }
-    #UserStore{
-       background-color: #d74141;
-        height: 100vh;
-    }
-    #UserStore>div:nth-child(2)>form{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    #UserStore>div:nth-child(2)>form>div:nth-child(1){
-        display: flex;
-        gap: 10px;
-        justify-content: space-between;
-    }
-    #UserStore>div:nth-child(2)>form>div:nth-child(1)>div{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    #UserStore>div:nth-child(2)>form>div:nth-child(1)>div>h1{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.1rem;
-
-    }
-    #UserStore>div:nth-child(2)>form>div:nth-child(2)>div>h1{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.1rem;
-
-    }
-
-    #UserStore>div:nth-child(2)>form>div:nth-child(2){
-        display: flex;
-        gap: 10px;
-
-    }
-    #UserStore>div:nth-child(2)>form>div:nth-child(2)>div{
-        width: 289.837px;
-
-    }
-    #UserStore>div:nth-child(2)>div:nth-child(5){
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-
-
-
-
-    /*card Manage start*/
-    .card>hr{
-        margin: 0;
-    }
-    .card-body{
-        padding: 10px;
-    }
-    .card-body>div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-    .card-body>h5{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        margin-bottom: 0;
-    }
-    .card-body>p{
-        margin-bottom: 0;
-    }
-    .card-body>.btnViewDetail{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        color: blue;
-        font-size: 10px;
-    }
-    .card-body>div>div>h5{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10px;
-        margin: 0;
-    }
-    .card-body>div>div>p{
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        margin: 0;
-    }
-    .card-body>button{
-        width: 100%;
-    }
-    #name,#pwd{
-        margin: 1rem;
-        width: 437px;
-    }
-
-</style>
-<body>
-
-
-<!----hero Section start---->
-
-<div class="hero">
-    <nav>
-        <h2 class="logo">Easy<span>Car Rental</span></h2>
+    <nav id="UserDashBoardHeadNav" class="headerNav">
         <ul>
-            <li ><a href="#">Home</a></li>
-            <li ><a href="#">Account</a></li>
-            <li ><a href="#">Store</a></li>
-            <li ><a href="#">Check Out</a></li>
+            <li class="Home" ><a href="#">Home</a></li>
+            <li class="Account"><a href="#">Account</a></li>
+            <li class="Store"><a href="#">Store</a></li>
+            <li class="CheckOut"><a href="#">Check Out</a></li>
         </ul>
-        <!--<a href="#" class="btn">Subscribe</a>-->
     </nav>
 
-    <div id="home" class="content">
-        <h4 id="myh4">FIND THE IDEAL CAR FOR YOU</h4>
-        <h1 id="myh1">We have more cars for you to choose</h1>
-        <h1 id="myh">Get the Best Car Best Price</h1>
-    </div>
-</div>
 
 
+</header>
+
+<main id="UserDashBoard">
+    <div></div>
+    <div></div>
+    <div></div>
+    <h1>FIND THE IDEAL CAR FOR YOU</h1>
+    <p>We have<b> more cars for you to choose</b>
+        Get the Best Car Best Price</p>
+
+</main>
 <main id="UserAccount" class="container-fluid">
     <div></div>
     <div></div>
     <div>
-        <div id="registrationForm">Registration Form</div>
-        <form>
+        <h1 >Registration Form.</h1>
+        <p>The first thing that has to happen is the fill the register form.</p>
+        <form id="userRegisterForm">
             <div>
                 <input id="txtCustomerName" type="text" class="form-control"  placeholder="Enter Name" name="name">
                 <input id="txtCustomerNIC" type="text" class="form-control"  placeholder="Enter NIC Number" name="nic">
@@ -263,59 +74,69 @@
                 <input id="txtCustomerPassword" type="text" class="form-control" placeholder="Enter New Password" name="password">
             </div>
             <div>
-                <img src="assets/images/file.png">
+                <img src="assets/img/uploadIcon.png">
                 <div>
                     <p>Upload Nic / Driving License</p>
                     <input id="file" name="img" type="file">
                 </div>
             </div>
             <div>
-                <button id="#btnregisterSignUp" type="button" class="btn btn-primary">Sign Up</button>
+                <button id="btnSignUp" type="button" class="btn btn-primary">Sign Up</button>
             </div>
-
-
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="or">
+                <h1>OR</h1>
+            </div>
+            <div>
+                <button id="btnSignIn" type="button" class="btn btn-primary"><img id="google" src="assets/img/googleIcon.png">Sign Up</button>
+            </div>
         </form>
     </div>
     <div>
-        <p>Alreary have account sign in <button href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">here</button></p>
+        <p>Alreary have account sign in <a id="logHere" href="#">here</a></p>
+    </div>
+</main>
+<main id="UserLoginAccount" class="container-fluid">
+    <div></div>
+    <div></div>
+    <div>
+        <h1 >Login Your Account.</h1>
+        <form>
+            <input id="txtLogEmail" type="text" class="form-control"  placeholder="Email">
+            <input id="txtLogPassword" type="text" class="form-control"  placeholder="Password">
+            <button id="btnSignnUp" type="button" class="btn btn-primary">Sign In</button>
+            <p>Forget Password <a href="#">here</a></p>
+            <div id="linee1"></div>
+            <div id="linee2"></div>
+            <div id="orr">
+                <h1>OR</h1>
+            </div>
+            <button id="btnSignnIn" type="button" class="btn btn-primary">
+                <img id="googlee" src="assets/img/googleIcon.png">Sign In</button>
+        </form>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In Account</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <input type="text" class="form-control" id="name" placeholder="User Name">
-                    <input type="text" class="form-control" id="pwd" placeholder="Password">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-success">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </main>
 <main id="UserStore" class="container-fluid">
     <div></div>
     <div>
-        <h1>Spend less and hire the best.</h1>
-        <h2><span>Rent a car </span>& Feel different with us</h2>
+        <h1>Unbeatable price.</h1>
+        <h2><span>Rent a car</span> & Expert Services</h2>
         <p>Recommendation for You</p>
         <form>
             <div>
                 <div>
+                    <h1>Brand</h1>
                     <select class="form-control" aria-label="Default select example">
                         <option selected>Brand</option>
                         <option value="1">One</option>
 
                     </select>
                 </div>
+
                 <div>
+                    <h1>Type</h1>
                     <select class="form-control" aria-label="Default select example">
                         <option selected>Type</option>
                         <option value="1">One</option>
@@ -323,6 +144,7 @@
                     </select>
                 </div>
                 <div>
+                    <h1>Fuel Type</h1>
                     <select class="form-control" aria-label="Default select example">
                         <option selected>Fuel Type</option>
                         <option value="1">One</option>
@@ -330,6 +152,7 @@
                     </select>
                 </div>
                 <div>
+                    <h1>Transmission</h1>
                     <select class="form-control" aria-label="Default select example">
                         <option selected>Transmission</option>
                         <option value="1">One</option>
@@ -337,6 +160,7 @@
                     </select>
                 </div>
                 <div>
+                    <h1>Passengers</h1>
                     <select class="form-control" aria-label="Default select example">
                         <option selected>Passengers</option>
                         <option value="1">One</option>
@@ -347,149 +171,366 @@
 
             </div>
             <div>
-                <input type="date" class="form-control" id="" placeholder="From">
-                <input type="date" class="form-control" id="" placeholder="To">
-                <input type="text" class="form-control" id="" placeholder="Search">
+                <div>
+                    <h1>Pick Up Date</h1>
+                    <input id="txtPickUpDate" type="date" class="form-control" placeholder="From">
+
+                </div>
+                <div>
+                    <h1>Return Date</h1>
+                    <input id="txtReturnDate" type="date" class="form-control"  placeholder="To">
+
+                </div>
+                <div>
+                    <h1>Search</h1>
+                    <input  class="form-control"  placeholder="Search">
+                </div>
             </div>
         </form>
-        <div>
-            <div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
-                    <hr>
-                    <div class="card-body border-bottom-0">
-                        <h5 class="card-title">Suzuki Alto</h5>
-                        <p class="card-text">Premium - Manual</p>
-                    </div>
-                    <hr>
-                    <div class="card-body text-center">
+        <div id="cardsStore">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/carStore.png" class="card-img-top" alt="...">
+                <hr>
+                <div class="card-body border-bottom-0">
+                    <h5 class="card-title">Suzuki Alto</h5>
+                    <p class="card-text">Premium - Manual</p>
+                    <button class="viewDetail btn btn-light">ViewDetail</button>
+                </div>
+                <hr>
+                <div class="card-body text-center">
+                    <div>
                         <div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>5000</p>
-                            </div>
-                            <div>
-                                <h5>Monthy</h5>
-                                <p>300000</p>
-                            </div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>15000</p>
-                            </div>
+                            <h5>Daily</h5>
+                            <p>5000</p>
                         </div>
-                        <a href="#" class="btn btn-primary">Add To Cart</a>
+                        <div>
+                            <h5>Monthy</h5>
+                            <p>300000</p>
+                        </div>
+                        <div>
+                            <h5>Daily</h5>
+                            <p>15000</p>
+                        </div>
                     </div>
-
+                    <button class="btn btn-primary">Add To Cart</button>
                 </div>
 
-
             </div>
-            <div>
 
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
-                    <hr>
-                    <div class="card-body border-bottom-0">
-                        <h5 class="card-title">Suzuki Alto</h5>
-                        <p class="card-text">Premium - Manual</p>
-                    </div>
-                    <hr>
-                    <div class="card-body text-center">
-                        <div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>5000</p>
-                            </div>
-                            <div>
-                                <h5>Monthy</h5>
-                                <p>300000</p>
-                            </div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>15000</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-primary">Add To Cart</a>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
-                    <hr>
-                    <div class="card-body border-bottom-0">
-                        <h5 class="card-title">Suzuki Alto</h5>
-                        <p class="card-text">Premium - Manual</p>
-                    </div>
-                    <hr>
-                    <div class="card-body text-center">
-                        <div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>5000</p>
-                            </div>
-                            <div>
-                                <h5>Monthy</h5>
-                                <p>300000</p>
-                            </div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>15000</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-primary">Add To Cart</a>
-                    </div>
-
-                </div>
-
-
-            </div>
-            <div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/carStore.png" class="card-img-top" alt="...">
-                    <hr>
-                    <div class="card-body border-bottom-0">
-                        <h5 class="card-title">Suzuki Alto</h5>
-                        <p class="card-text">Premium - Manual</p>
-                    </div>
-                    <hr>
-                    <div class="card-body text-center">
-                        <div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>5000</p>
-                            </div>
-                            <div>
-                                <h5>Monthy</h5>
-                                <p>300000</p>
-                            </div>
-                            <div>
-                                <h5>Daily</h5>
-                                <p>15000</p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-primary">Add To Cart</a>
-                    </div>
-
-                </div>
-
-
-            </div>
         </div>
     </div>
 
 </main>
+<main id="userCarCatalogue" class="container-fluid">
+    <div></div>
+    <div>
+        <img class="carCatelImg1" src="assets/img/Car001.png">
+        <img class="carCatelImg2" src="assets/img/Car001.png">
+        <img class="carCatelImg3" src="assets/img/Car001.png">
+        <img class="carCatelImg4" src="assets/img/Car001.png">
+    </div>
 
-<script src="assets/js/jquery-3.6.1.min (2).js"></script>
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/controllers/DashBoard.js"></script>
-<script src="assets/controllers/registerFormController.js"></script>
+    <div>
+        <h1>Car Catalogue.</h1>
+    </div>
+    <div>
+        <h1 class="carCatelBrand">Mercedes.</h1>
+        <p>
 
+        </p>
+        <div>
+            <div>
+                <h1>Brand</h1>
+                <p class="carCatelBrand">Mercedens</p>
+            </div>
+            <div>
+                <h1>Model</h1>
+                <p class="carCatelModel">GLC AMG</p>
+            </div>
+            <div>
+                <h1>Transmission</h1>
+                <p class="carCatelTransmission">Auto</p>
+            </div>
+            <div>
+                <h1>Fuel</h1>
+                <p class="carCatelFuel">Diesel</p>
+            </div>
+            <div>
+                <h1>Type</h1>
+                <p class="carCatelType">Luxury</p>
+            </div>
+            <div>
+                <h1>No Of Passengers</h1>
+                <p class="carCatelNoOfPassengers">6</p>
+            </div>
+            <div>
+                <h1>Free Mileage</h1>
+                <p class="carCatelFreeMileage">100km</p>
+            </div>
+            <div>
+                <h1>Free Monthly Mileage</h1>
+                <p class="carCatelFreeMonthlyMileage">100km</p>
+            </div>
+            <div>
+                <h1>Cost Per Extra Km</h1>
+                <p class="carCatelCostPerExtraKm" >100.00</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <p class="carCatelDaily">18000.00</p>
+                <h1>Daily</h1>
+            </div>
+            <div>
+                <p class="carCatelMonthly">300000.00</p>
+                <h1>Monthly</h1>
+            </div>
+            <div>
+                <p class="carLostDamageWaivor">20000.00</p>
+                <h1>Lost Damage Waivor</h1>
+            </div>
+        </div>
+        <button type="button" data-register="zzzzz" class="btn btn-danger btnAddToCart">Add to Cart</button>
+    </div>
+</main>
+<main id="UserCheckOut" class="container-fluid">
+    <div></div>
+    <div></div>
+    <div>
+        <h1 >Car Checkout.</h1>
+
+        <form>
+            <table class="table table-hover" >
+                <thead class="table-primary ">
+                <tr>
+                    <th scope="col">Car</th>
+                    <th scope="col">Daily</th>
+                    <th scope="col">Monthly</th>
+                    <th scope="col">OnHold</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Driver</th>
+                    <th scope="col">Lost Damage Waiver</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody id = "tableCheckOutCart">
+                <!--<tr>
+                    <td>Mercedes</td>
+                    <td>18000.00</td>
+                    <td>300000.00</td>
+                    <td>20000.00</td>
+                    <td class="tblcoldate">
+                        <div>
+                            <h1>From</h1>
+                            <h2>10/01/2023</h2>
+                        </div>
+                        <div>
+                            <h1>To</h1>
+                            <h2>10/02/2023</h2>
+                        </div>
+                    </td>
+                    <td class="tblcolSelect">
+                        <select class="form-control" aria-label="Default select example">
+                            <option selected="">None</option>
+                            <option value="1">add Driver</option>
+
+                        </select>
+                    </td>
+                    <td class="tblcolDamageUpload">
+                        <div>
+                            <img src="assets/img/uploadIcon.png">
+                            <div>
+                                <p>Lost Damage Waiver</p>
+                                <input type="file"  >
+                            </div>
+                        </div>
+
+                    </td>
+                    <td class="tblcoldelete">
+                        <button class="btn">
+                            <img src="assets/img/circleDelete.png">
+                        </button>
+
+                    </td>
+                </tr>-->
+
+
+
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div>
+        <h1>Pick Up Venue</h1>
+        <input id="txtPickUpVenueCheckOut" type="text" class="form-control"  placeholder="Enter PickUp Venue">
+    </div>
+    <div>
+        <h1>Return Venue</h1>
+        <input id="txtReturnVenueCheckOut" type="text" class="form-control"  placeholder="Enter Return Venue">
+    </div>
+    <div>
+        <div>
+<!--            <h2>20000.00</h2>-->
+<!--            <h1>Total Rent Amount</h1>-->
+
+        </div>
+        <div>
+<!--            <h2 id="tagDamageWaiverAmount">20000.00</h2>-->
+<!--            <h1>Total Damage Waiver Amount</h1>-->
+
+        </div>
+        <div>
+
+        </div>
+    </div>
+    <div>
+        <h1 class="userNameTag"></h1>
+        <h2 class="userEmailTag"></h2>
+    </div>
+    <button id="btnSendRentalRequest" class="btn btn-primary">Send Rental Request</button>
+</main>
+<main id="UserViewCarRents" class="container-fluid">
+    <div></div>
+    <div></div>
+    <div>
+        <h1 >Car Rent View .</h1>
+
+        <form>
+            <table class="table table-hover" >
+                <thead class="table-primary ">
+                <tr>
+                    <th scope="col">Car</th>
+                    <th scope="col">Driver</th>
+                    <th scope="col">Pending Payment</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">status</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Mercedes</td>
+                    <td class="tblcolDriver">
+                        <div>D-001</div>
+                        <button class="btn">
+                            Driver Detail
+                        </button>
+
+                    </td>
+                    <td>15000.00</td>
+                    <td class="tblcoldate">
+                        <div>
+                            <h1>From</h1>
+                            <h2>10/01/2023</h2>
+                        </div>
+                        <div>
+                            <h1>To</h1>
+                            <h2>10/02/2023</h2>
+                        </div>
+                    </td>
+                    <td>Pending</td>
+
+                    <td class="tblcoldelete">
+                        <button class="btn">
+                            <img src="assets/img/circleDelete.png"></img>
+                        </button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mercedes</td>
+                    <td class="tblcolDriver">
+                        <div>D-001</div>
+                        <button class="btn">
+                            Driver Detail
+                        </button>
+
+                    </td>
+                    <td>15000.00</td>
+                    <td class="tblcoldate">
+                        <div>
+                            <h1>From</h1>
+                            <h2>10/01/2023</h2>
+                        </div>
+                        <div>
+                            <h1>To</h1>
+                            <h2>10/02/2023</h2>
+                        </div>
+                    </td>
+                    <td>Pending</td>
+
+                    <td class="tblcoldelete">
+                        <button class="btn">
+                            <img src="assets/img/circleDelete.png"></img>
+                        </button>
+
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+
+        <div>
+            <h1>Pick Up Venue</h1>
+            <h2>store</h2>
+        </div>
+        <div>
+            <h1>Return Venue</h1>
+            <h2>colombo</h2>
+        </div>
+    </div>
+
+    <div>
+        <h1 class="userNameTag"></h1>
+        <h2 id="userCheckOutEmailTag" class="userEmailTag"></h2>
+        <button type="button" class="btn" id="customerUpdateModalShow" data-bs-toggle="modal" data-bs-target="#customerUpdatePopUp">Update</button>
+    </div>
+    <div>
+        <button class="btn"><img src="assets/img/userlogout.png"> Log Out</button>
+    </div>
+
+
+    <div class="modal fade" id="customerUpdatePopUp" tabindex="-1"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" >Update Customer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="txtCustomerUName" class="form-label">Name</label>
+                        <input class="form-control form-control-sm" id="txtCustomerUName" type="text">
+<!--                        <p id="">Input Content is not matching</p>-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtCustomerUAddress" class="form-label">Address</label>
+                        <input class="form-control" type="text" id="txtCustomerUAddress">
+<!--                        <p id="">Input Content is not matching Required type 'C001'</p>-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="txtCustomerUContactNumber" class="form-label">Contact Number</label>
+                        <input class="form-control" type="text" id="txtCustomerUContactNumber">
+<!--                        <p id="lblCustomerNameUValidate">Input Content is not matching</p>-->
+                    </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="btnUpdateCustomer" type="button" class="btn btn-warning">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="controllers/DashBoardController.js"></script>
+<script src="controllers/userRegisterController.js"></script>
+<script src="controllers/StoreController.js"></script>
+<script src="controllers/userCheckOutController.js"></script>
 </body>
 </html>

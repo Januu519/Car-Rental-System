@@ -1,0 +1,129 @@
+#UserLoginAccount>div:nth-child(1){
+    background:url("../img/register.jpg");
+    background-size:cover;
+    background-position:center;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+}
+#UserLoginAccount>div:nth-child(2){
+    background:url("../img/Wavy_Trv-01_Single-12.jpg");
+    background-size:cover;
+    background-position:center;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 430px;
+}
+
+/*#UserLoginAccountHeadNav{*/
+/*    z-index: 1;*/
+/*    position: absolute;*/
+/*    top: 16px;*/
+/*    right: 65px;*/
+/*}*/
+
+/*#UserLoginAccountHeadNav>ul>li{*/
+/*    display: inline-block;*/
+/*    padding-left: 25px;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: 400;*/
+/*    font-size: 30px;*/
+/*    line-height: 45px;*/
+
+/*}*/
+/*#UserLoginAccountHeadNav>ul>li:nth-child(1)>a:hover{*/
+/*    text-decoration: none;*/
+/*}*/
+/*#UserLoginAccountHeadNav>ul>li:nth-child(2)>a{*/
+/*    color: black;*/
+/*}*/
+/*#UserLoginAccountHeadNav>ul>li>a{*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*}*/
+/*#UserLoginAccountHeadNav>ul>li>a:hover{*/
+/*    color: black;*/
+/*    text-decoration: none;*/
+/*}*/
+
+
+#UserLoginAccount>div:nth-child(3),#UserLoginAccount>div:nth-child(4){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+}
+#UserLoginAccount>div>h1,#UserLoginAccount>div>form>div>h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 60px;
+}
+#UserLoginAccount>div>form{
+    width: 35%;
+}
+
+#UserLoginAccount>div>form>input:nth-child(1){
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#UserLoginAccount>div>form>input:nth-child(2){
+    margin-bottom: 20px;
+}
+#UserLoginAccount>div>form>p{
+    margin: 0;
+}
+#btnSignnUp{
+
+    background-color: lightseagreen;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+}
+
+#bar{
+    border:1px solid black;
+}
+#orr{
+    display: flex;
+    justify-content: center;
+
+}
+#or>h1{
+    margin: 0;
+}
+#btnSignnIn{
+
+    background-color: lightseagreen;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#linee1{
+ position: absolute;
+    border: 1px solid;
+    width: 14rem;
+    top: 307px;
+}
+#linee2{
+    position: absolute;
+    border: 1px solid;
+    width: 14rem;
+    top: 307px;
+    right: 490px;
+}
+#googlee{
+    height: 1.5rem;
+}
