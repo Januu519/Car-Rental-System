@@ -33,8 +33,8 @@ function loadAllAdmins() {
                 var row = '<tr><td>' + admin.adminId + '</td><td>' +admin.email+ '</td><td>' + admin.username + '</td><td>' + admin.password + '</td></tr>';
                 $("#tblAdmin").append(row);
             }
-           bindRowClickEvents()
-           setTextFieldValues("","","","")
+            bindRowClickEvents()
+            setTextFieldValues("","","","")
         }
     });
 
@@ -101,7 +101,7 @@ $("#btnAdminUpdate").click(function () {
         dataType:"json",
         success: function (res) {
             alert(res.message);
-            loadAllDrivers();
+            loadAllAdmins();
         },
         error:function (error){
             let cause= JSON.parse(error.responseText).message;
