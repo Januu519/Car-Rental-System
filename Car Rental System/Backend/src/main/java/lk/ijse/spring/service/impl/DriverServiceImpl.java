@@ -1,0 +1,60 @@
+package lk.ijse.spring.service.impl;
+
+import lk.ijse.spring.dto.DriverDTO;
+import lk.ijse.spring.entity.Driver;
+import lk.ijse.spring.repo.DriverRepo;
+import lk.ijse.spring.service.DriverService;
+import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
+import java.util.ArrayList;
+
+@Service
+@Transactional
+public class DriverServiceImpl implements DriverService {
+    @Autowired
+    private DriverRepo repo;
+
+    @Autowired
+    private ModelMapper mapper;
+
+    @Override
+    public void addDriver(DriverDTO dto) {
+        if (repo.existsById(dto.getDriverID())) {
+            throw new RuntimeException("Driver "+dto.getDriverID()+" Already Exist..!");
+        }
+
+        repo.save(mapper.map(dto, Driver.class));
+    }
+
+    @Override
+    public void deleteDriver(String id) {
+        if (!repo.existsById(id)){
+            throw new RuntimeException("Driver "+id+" Not Available to Delete..!");
+        }
+        repo.deleteById(id);
+    }
+
+    @Override
+    public void updateDriver(DriverDTO dto) {
+        if (!repo.existsById(dto.getDriverID())){
+            throw new RuntimeException("Driver "+dto.getDriverID()+" Not Available to Update..!");
+        }
+        repo.save( mapper.map(dto, Driver.class));
+    }
+
+    @Override
+    public ArrayList<DriverDTO> getAllDrivers() {
+
+        return mapper.map(repo.findAll(), new TypeToken<ArrayList<DriverDTO>>() {
+        }.getType());
+    }
+
+    @Override
+    public DriverDTO searchDriverByDriverID(String name) {
+        return null;
+    }
+}
